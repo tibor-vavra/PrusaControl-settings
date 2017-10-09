@@ -143,6 +143,30 @@
         "end_gcode": "G1 E-4 F2100.00000\\nG91\\nG1 Z1 F7200.000\\nG90\\nG1 X245 Y1\\nG1 X240 E4\\nG1 F4000\\nG1 X190 E2.7\\nG1 F4600\\nG1 X110 E2.8\\nG1 F5200\\nG1 X40 E3 \\n G1 E-15.0000 F5000\\nG1 E-50.0000 F5400\\nG1 E-15.0000 F3000\\nG1 E-12.0000 F2000\\nG1 F1600\\nG1 X0 Y1 E3.0000\\nG1 X50 Y1 E-5.0000\\nG1 F2000\\nG1 X0 Y1 E5.0000\\nG1 X50 Y1 E-5.0000\\nG1 F2400\\nG1 X0 Y1 E5.0000\\nG1 X50 Y1 E-5.0000\\nG1 F2400\\nG1 X0 Y1 E5.0000\\nG1 X50 Y1 E-3.0000\\nG4 S0\\nM107 ; fan off\\nM104 S0 ; turn off temperature\\nM140 S0 ; turn off heatbed\\nG28 X0  ; home X axis\\nM84     ; disable motors"
       }
     },
+    "i3_mk3": {
+      "name": "i3_mk3",
+      "label": "Original Prusa i3 MK3",
+      "model": "data/models/PrintBed03.obj",
+      "model_offset": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "texture": "data/img/PrintBed04.png",
+      "texture_from_below": "data/img/PrintBed04_GRID.png",
+      "printing_space": [
+        250,
+        210,
+        210
+      ],
+      "material_parameters_file": "materials_i3_mk3.json",
+      "sort": 1,
+      "parameters": {
+        "retract_lift": 0.6,
+        "start_gcode": "M115 U3.0.12 ; tell printer latest fw version\\nM83  ; extruder relative mode\\nM104 S[first_layer_temperature] ; set extruder temp\\nM140 S[first_layer_bed_temperature] ; set bed temp\\nM190 S[first_layer_bed_temperature] ; wait for bed temp\\nM109 S[first_layer_temperature] ; wait for extruder temp\\nG28 W ; home all without mesh bed level\\nG80 ; mesh bed leveling\\nG1 Y-3.0 F1000.0 ; go outside pritn area\\nG1 X60.0 E9.0  F1000.0 ; intro line\\nG1 X100.0 E12.5  F1000.0 ; intro line",
+        "end_gcode": "G4 ; wait\\nM104 S0 ; turn off temperature\\nM140 S0 ; turn off heatbed\\nM107 ; turn off fan\\nG1 X0 Y200; home X axis\\nM84 ; disable motors"
+      }
+    },
     "default": {
       "name": "default",
       "label": "",
