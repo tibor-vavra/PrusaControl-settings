@@ -1,6 +1,6 @@
 {
   "info": {
-    "version": 3.3
+    "version": 3.4
   },
   "printers": {
     "i3_mk2": {
@@ -146,14 +146,14 @@
     "i3_mk3": {
       "name": "i3_mk3",
       "label": "Original Prusa i3 MK3",
-      "model": "data/models/MK3_01.obj",
+      "model": "data/models/MK3.obj",
       "model_offset": [
         0.0,
         0.0,
         0.0
       ],
-      "texture": "data/img/MK3_01.png",
-      "texture_from_below": "data/img/MK3_01_bottom alpha.png",
+      "texture": "data/img/MK3.png",
+      "texture_from_below": "data/img/MK3_bottom_alpha.png",
       "printing_space": [
         250,
         210,
