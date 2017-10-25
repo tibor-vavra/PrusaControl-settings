@@ -1,6 +1,6 @@
 {
   "info": {
-    "version": 3.4
+    "version": 3.5
   },
   "printers": {
     "i3_mk2": {
@@ -51,6 +51,7 @@
         "0.4mm": {
           "name": "0.4mm",
           "label": "Nozzle 0.4mm",
+          "sort": 0,
           "parameters": {
             "nozzle_diameter": 0.4
           }
@@ -58,6 +59,7 @@
         "0.6mm": {
           "name": "0.6mm",
           "label": "Nozzle 0.6mm",
+          "sort": 1,
           "parameters": {
             "nozzle_diameter": 0.6,
             "perimeters" : 2,
@@ -109,6 +111,7 @@
         "0.4mm": {
           "name": "0.4mm",
           "label": "Nozzle 0.4mm",
+          "sort": 0,
           "parameters": {
             "nozzle_diameter": 0.4,
             "retract_length": 4
@@ -117,6 +120,7 @@
         "0.6mm": {
           "name": "0.6mm",
           "label": "Nozzle 0.6mm",
+          "sort": 1,
           "parameters": {
             "nozzle_diameter": 0.6,
             "retract_length": 4,
@@ -225,6 +229,7 @@
         "0.4mm": {
           "name": "0.4mm",
           "label": "Nozzle 0.4mm",
+          "sort": 0,
           "parameters": {
             "nozzle_diameter": 0.4
           }
@@ -232,6 +237,7 @@
         "0.25mm": {
           "name": "0.25mm",
           "label": "Nozzle 0.25mm",
+          "sort": 1,
           "parameters": {
             "nozzle_diameter": 0.25,
             "retract_length": 1,
@@ -252,6 +258,7 @@
         "0.6mm": {
           "name": "0.6mm",
           "label": "Nozzle 0.6mm",
+          "sort": 2,
           "parameters": {
             "nozzle_diameter": 0.6,
             "perimeters" : 2,
@@ -272,6 +279,7 @@
         "default": {
           "name": "default",
           "label": "",
+          "sort": 3,
           "parameters": {
             "nozzle_diameter": 0.4
           }
